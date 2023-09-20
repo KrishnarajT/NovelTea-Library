@@ -17,7 +17,7 @@ async function getRandomImageUrl() {
 }
 class BooksController {
   async getAllBooks(req, res) {
-    console.log("hi");
+    console.log("Received Request to get all books, sending now. ");
     try {
       const books = await Book.find();
       res.status(200).json(books);
@@ -27,7 +27,6 @@ class BooksController {
   }
 
   async getBookById(req, res) {
-    console.log("hi");
     try {
       const book = await Book.findById(req.params.id);
       if (!book) {
@@ -40,8 +39,7 @@ class BooksController {
   }
 
   async createBook(req, res) {
-    console.log("hi", req.data);
-    console.log("hi", req.query);
+    console.log("Adding new Book, Received Request", req.query);
     const image = await getRandomImageUrl();
     const book = new Book({
       title: req.query.title,
@@ -60,7 +58,7 @@ class BooksController {
   }
 
   async updateBook(req, res) {
-    console.log("hi update books", req.query);
+    console.log("Received Request to update Book", req.query);
     try {
       const book = await Book.findById(req.params.id);
       if (!book) {
@@ -80,7 +78,7 @@ class BooksController {
   }
 
   async deleteBook(req, res) {
-    console.log("hi", req.params);
+    console.log("Request to Delete Book Received.", req.params);
     try {
       const book = await Book.findById(req.params.id);
       if (!book) {
