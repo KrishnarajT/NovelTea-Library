@@ -1,13 +1,10 @@
 import {
 	Navbar,
 	Typography,
-	IconButton,
 	Button,
 	Input,
 } from "@material-tailwind/react";
 import {
-	BellIcon,
-	Cog6ToothIcon,
 	PencilIcon,
 	PlusIcon,
 	TrashIcon,
@@ -21,7 +18,7 @@ import { SearchResultsContext } from "../context/SearchResults";
 
 export function NavbarWithSearch() {
 	const apiUrl = React.useContext(BaseUrlContext).baseUrl;
-	const { searchResults, setSearchResults } =
+	const { setSearchResults } =
 		React.useContext(SearchResultsContext);
 	const navigate = useNavigate();
 	const search_books = () => {

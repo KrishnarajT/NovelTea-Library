@@ -7,7 +7,6 @@ import {
 	BookmarkIcon,
 	CurrencyRupeeIcon,
 	PencilIcon,
-	TrashIcon,
 	UserIcon,
 } from "@heroicons/react/24/solid";
 import { Input } from "@material-tailwind/react";

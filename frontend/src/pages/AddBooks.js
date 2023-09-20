@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Input, Select } from "@material-tailwind/react";
+import { Button, Input } from "@material-tailwind/react";
 import {
 	BookmarkIcon,
 	CurrencyRupeeIcon,

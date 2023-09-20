@@ -1,13 +1,9 @@
 import React from "react";
 import axios from "axios";
-import { Button, Spinner } from "@material-tailwind/react";
-import { BaseUrlContext } from "../context/BaseUrlContext";
 import Book from "../components/ui/Book";
-import { TrashIcon } from "@heroicons/react/24/solid";
 import { SearchResultsContext } from "../context/SearchResults";
 
 const SearchResult = () => {
-	const [books, setBooks] = React.useState([]);
 	const { searchResults } = React.useContext(SearchResultsContext);
 
 	return (
