@@ -11,20 +11,20 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Set up API routes
-app.use(setApiRoutes)
+app.use(setApiRoutes);
 
 // Connect to database
 mongoose
-	.connect("mongodb://localhost/BookStore", { useNewUrlParser: true })
-	.then(() => {
-		console.log("Connected to database");
-	})
-	.catch((error) => {
-		console.error("Error connecting to database:", error);
-	});
+  .connect("mongodb://localhost/BookStore", { useNewUrlParser: true })
+  .then(() => {
+    console.log("Connected to database");
+  })
+  .catch((error) => {
+    console.error("Error connecting to database:", error);
+  });
 
 // Start server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-	console.log(`Server listening on port ${port}`);
+  console.log(`Server listening on port ${port}`);
 });

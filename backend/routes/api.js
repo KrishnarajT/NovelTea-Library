@@ -6,7 +6,7 @@ const booksController = new BooksController();
 
 router.get("/books", booksController.getAllBooks);
 router.get("/", (req, res) => {
-	res.send("Hello World!");
+  res.send("Hello World!");
 });
 router.get("/books/:id", booksController.getBookById);
 router.post("/books", booksController.createBook);

@@ -1,6 +1,7 @@
 # NovelTea-Library
 
-A simple Library with CRUD operations, made with the MERN Stack. 
+A simple Library with CRUD operations, made with the MERN Stack.
+
 # Bookstore Project
 
 This project is a simple book store application that consists of a REST API built with Node.js and Express, and a basic frontend.
