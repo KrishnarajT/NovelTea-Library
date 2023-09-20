@@ -1,12 +1,45 @@
 # NovelTea-Library
 
-A simple Library with CRUD operations, made with the MERN Stack.
+A simple Library with CRUD operations, made with the MERN Stack. It wasnt like any other planned project and I just went on adding basic features. Works as a library tho. And I loved using MongoDB.
 
-# Bookstore Project
+# Screenshots
 
-This project is a simple book store application that consists of a REST API built with Node.js and Express, and a basic frontend.
+## Demo
 
-## Project Structure
+![](/screenshots/demo.gif)
+
+## Home Page
+
+![](/screenshots/home.png)
+
+## Add Book
+
+![](/screenshots/add.png)
+
+## Edit Book
+
+![](/screenshots/update.png)
+
+## Delete Book
+
+![](/screenshots/delete.png)
+
+## Search
+
+![](/screenshots/search.png)
+
+# Features
+
+1. Add Books
+2. Edit Books
+3. Delete Books
+4. Search Books
+
+# How to run
+
+You would have to start the server, and have mongo db installed to run the backend. For the Front end, you can visit the [The Deployed Website](https://noveltea.surge.sh/) or run it locally.
+
+# Project Structure
 
 The project has the following file structure:
 
@@ -23,11 +56,46 @@ bookstore
 │   ├── package.json
 │   └── README.md
 ├── frontend
-│   ├── index.html
-│   ├── main.js
-│   ├── style.css
-│   ├── package.json
-│   └── README.md
+├── README.md
+├── package-lock.json
+├── package.json
+├── public
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── apple-touch-icon.png
+│   ├── browserconfig.xml
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   ├── icon.png
+│   ├── index.html
+│   ├── manifest.json
+│   ├── mstile-150x150.png
+│   ├── robots.txt
+│   ├── safari-pinned-tab.svg
+│   └── site.webmanifest
+├── src
+│   ├── App.js
+│   ├── components
+│   │   ├── NavbarWithSearch.js
+│   │   └── ui
+│   │       ├── Book.css
+│   │       ├── Book.js
+│   │       ├── Rupee.js
+│   │       └── SolarTeaCupBoldDuotone.js
+│   ├── context
+│   │   ├── BaseUrlContext.js
+│   │   └── SearchResults.js
+│   ├── index.js
+│   ├── input.css
+│   ├── pages
+│   │   ├── AddBooks.js
+│   │   ├── DeleteBooks.js
+│   │   ├── Home.js
+│   │   ├── SearchResult.js
+│   │   └── UpdateBooks.js
+│   └── style.css
+└── tailwind.config.js
 └── README.md
 ```
 
@@ -92,3 +160,19 @@ The `README.md` file contains the documentation for the frontend application.
 ## Conclusion
 
 This project is a simple example of a book store application built with Node.js, Express, and MongoDB on the backend, and HTML, CSS, and JavaScript on the frontend.
+
+# Libraries used
+
+1. [Express](https://expressjs.com/)
+2. [Mongoose](https://mongoosejs.com/)
+3. [React](https://reactjs.org/)
+4. [Node](https://nodejs.org/en/)
+5. [MongoDB](https://www.mongodb.com/)
+6. [Tailwind CSS](https://tailwindcss.com/)
+7. [React Router](https://reactrouter.com/)
+8. [Heroicons](https://heroicons.com/)
+9. [Material Tailwind](https://material-tailwind.com/)
+
+# Credits
+
+Thanks to Parents, Teachers and Friends for helping me out, as always...
